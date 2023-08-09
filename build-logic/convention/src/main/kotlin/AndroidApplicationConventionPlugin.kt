@@ -33,6 +33,7 @@ class AndroidApplicationConventionPlugin : Plugin<Project> {
 
             extensions.configure<ApplicationExtension> {
                 configureKotlinAndroid(this)
+                buildToolsVersion = "34.0.0"
                 defaultConfig.targetSdk = 34
                 configureGradleManagedDevices(this)
             }

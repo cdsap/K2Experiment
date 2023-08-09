@@ -30,6 +30,7 @@ class AndroidTestConventionPlugin : Plugin<Project> {
             }
 
             extensions.configure<TestExtension> {
+                buildToolsVersion = "34.0.0"
                 configureKotlinAndroid(this)
                 defaultConfig.targetSdk = 34
                 configureGradleManagedDevices(this)

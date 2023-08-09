@@ -31,6 +31,7 @@ class AndroidFeatureConventionPlugin : Plugin<Project> {
                 apply("nowinandroid.android.hilt")
             }
             extensions.configure<LibraryExtension> {
+                buildToolsVersion = "34.0.0"
                 defaultConfig {
                     testInstrumentationRunner =
                         "com.google.samples.apps.nowinandroid.core.testing.NiaTestRunner"
