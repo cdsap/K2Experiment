@@ -38,6 +38,7 @@ class AndroidLibraryConventionPlugin : Plugin<Project> {
 
             extensions.configure<LibraryExtension> {
                 configureKotlinAndroid(this)
+                buildToolsVersion = "34.0.0"
                 defaultConfig.targetSdk = 34
                 configureFlavors(this)
                 configureGradleManagedDevices(this)
